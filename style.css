@@ -1,0 +1,96 @@
+body{
+    margin: 0px;
+    background-image: url('Poppies_in_the_Sunset_on_Lake_Geneva.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 12pt; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+a:link{
+    color: #000000;
+}
+a:visited{
+    color: #000000;
+}
+a:focus{
+    color: #ffffff;
+}
+a:hover{
+    color: #ffffff;
+    background: #ff4500; 
+}
+a:active{
+    color: #ff4500;
+    background: none;    
+}
+/* 讓標題跟選單固定在畫面正上方 */
+header{
+    width: 100%;
+    position: fixed; top: 0;
+    background-color: #ffffff;
+    font-weight: bold;
+}
+/* 讓標題跟選單範圍是畫面的60% */
+.container{
+    margin: auto; padding: 10px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+/* 標題 */
+.head{
+    flex: 2;
+    font-size: 24pt; font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* 選單 */
+nav{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+}
+.item{
+    flex: 1;
+    text-align: center;
+    cursor: pointer;            
+}
+/* 內容 */
+main{
+    /* 讓內容不會被固定位置的選單蓋住 */
+    margin-top: 75px;
+}
+.content{
+    display: none;
+    margin: auto;
+    width: 75%;
+}
+.showed-content{
+    display: block;
+    margin: auto;
+    width: 75%;
+}
+.title{
+    font-size: 24px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: #000 0 0 .2em;
+}
+.title>h1{
+    margin: 2%;
+}
+.box{
+    margin: 15px; padding: 15px;
+    border-radius: 25px;
+    background-color: rgba(255,255,255,0.3);
+}
