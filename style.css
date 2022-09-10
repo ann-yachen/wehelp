@@ -94,16 +94,19 @@ main{
     border-radius: 25px;
     background-color: rgba(255,255,255,0.3);
 }
-/* 針對選單高度變化，修改margin避免內容被選單遮住 */
+/* 針對選單高度變化，修改margin-top避免內容被選單遮住 */
 @media (max-width: 1104px){
     main{
-        /* 讓內容不會被固定位置的選單蓋住 */
         margin-top: 115px;
     }
 }
 @media (max-width: 768px){
     main{
-        /* 讓內容不會被固定位置的選單蓋住 */
         margin-top: 150px;
+    }
+}
+@media (max-width: 512px){
+    main{
+        margin-top: 170px;
     }
 }
